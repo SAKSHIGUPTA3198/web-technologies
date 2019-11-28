@@ -1,0 +1,39 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-image: url("natures.jpg");
+    padding: 10px;
+}
+h1{
+    padding: inherit;
+    color: blue;
+}
+menu{
+    margin:0px;
+    padding: 0px;
+}
+menu li{
+    display:inline;
+}
+menu li a{
+    text-decoration: none;
+    background-color:rgb(123, 139, 235);
+    color:white;
+    padding:15px 20px 15px 20px;
+    
+    border-radius:5px;
+
+}
+menu li a:hover{
+    background-color: green;
+}
+nav{
+    line-height: 30px;
+    padding: 10px;
+    height: 400px;
+    width: 200px;
+    float: left;
+}
+nav li a{
+    text-decoration:none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style src ="payment.js">
+     #container{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+
+
+    }</style>
+</head>
+
+        <body onload="payment()">
+        <form action=" " method="POST">
+                <div id="container"></div>
+          <h1>ENTER LOAN INFORMATION:</h1>
+                <table>
+   <ol type = 1>
+
+   
+            
+        <li>Amount of the loan(any currency): <input type="text" name="amount" id="amount"></li>
+             <li>  Annual percentage rate of interest: <input type="text" name="amount1" id="amount1"></li>
+                    <li> Repayment period in years: <input type="text" name="amount2" id="amount2"></li>
+
+                    <input type="button" value="COMPUTE" onclick="payment()">
+
+                    <h1>PAYMENT INFORMATION:</h1>
+
+                    <li>Your monthly payment will be: <input type="text" name="amount3" id="amount3"></li>
+                    <li> Your total payment will be: <input type="text" name="amount4" id="amount4"></li>
+                           <li> Your total interest payments will be: <input type="text" name="amount5" id="amount5"></li>
+       
+
+
+
+     </ol>
+    </table>
+    </form>
+</body>
+</html>

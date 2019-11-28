@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Registration</title>
+		<script src="jquery-3.4.1.js"></script>
+		<!-- <link href="css/homeStyles.css" rel="stylesheet" /> -->
+		<link href="css/EmpStyles.css" rel="stylesheet" />
+		
+		<script>
+			$(document).ready(function(){
+				$('#accept').click(function(){
+					if($('#submitbtn').is(':disabled')){
+						$('#submitbtn').removeAttr('disabled');
+					}else{
+						$('#submitbtn').attr('disabled','disabled');
+					}
+				});
+			});                                                                                                                                        
+		</script>
+	</head>
+<body >
+        <div style="background-color:aqua; ">
+                <center><h1>Welcome to LTI!</h1>
+	<h3 >Fill Candidate Details..</h3> </center>
+	<form method="post" validate autocomplete="off">
+	<table align="center">
+		<tr>
+			<th>First Name : </th>
+			<td>
+			<input type="text" id="txtName"  name="txtName" maxlength="10" size="50" 
+			placeholder="User Name" required autofocus/>
+			</td>
+        </tr>
+        <tr>
+                <th>Last Name : </th>
+                <td>
+                <input type="text" id="txtName" name="txtName" maxlength="10" size="50" 
+                placeholder="User Name" required autofocus/>
+                </td>
+            </tr>
+		<tr>
+			<th>Age : </th>
+			<td>
+			<input type="number" id="txtAge" name="txtAge"
+			 min="18" max="40" step="2" placeholder="Age" />
+			</td>
+		</tr>
+		<tr>
+			<th>Address : </th>
+			<td>
+			<textarea id="txtAddr" name="txtAddr" rows="5"
+			cols="60" maxlength="500" size="50"
+			placeholder="Type Address"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th>Mobile Number : </th>
+			<td>
+			<input type="text" id="txtMN" name="txtMN"
+			maxlength="10" size="20" pattern="[7-9][0-9]{9}" placeholder="Mobile Number" />
+			</td>
+		</tr>
+		<tr>
+			<th>Email Address : </th>
+			<td>
+			<input type="email" id="txtEmail" name="txtEmail"
+			maxlength="40" size="40" placeholder="Email Address" />
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<th>Gender : </th>
+			<td>
+			<input type="radio" id="rbtnMale" name="rbtngender"
+			checked value="M" />Male
+			<input type="radio" id="rbtnFemale" name="rbtngender"
+			value="F" />Female
+			</td>
+        </tr>
+        <tr>
+                <th>Select Qualifications : </th>
+                <td>
+                <select style="width:200px" id="ddlCity" name="ddlCity"
+                multiple size="5">
+                <option value="Select">--Select--</option>
+                <option selected value="B.E">B.E</option>
+                <option value="BTECH">BTECH</option>
+                <option value="Chennai">MTECH</option>
+                <option value="Hyderabad">MCA</option>
+                
+                </select>
+                </td>
+            </tr>
+
+
+        <tr>
+                <th>Enter CGPA : </th>
+                <td>
+                <input type="text" id="txtName" name="txtName" maxlength="10" size="50" 
+                placeholder="Enter marks" required autofocus/>
+                </td>
+            </tr>
+        
+
+
+
+		<tr>
+			<th>Technologies Known : </th>
+			<td>
+			<input type="checkbox" id="accept" name="accept" value="y"
+			 />C
+		<!--<input type="checkbox" id="chkCPP" name="chkCPP"
+			value="C++" />C++
+			<input type="checkbox" id="chkJava" name="chkJava"
+			value="Java" checked value="Java" />Java
+			<input type="checkbox" id="chkCS" name="chkCS"
+			value="CS" />C#-->
+			</td>
+		</tr>
+	
+		
+		
+		<tr>
+			<th>Date Of Joining : </th>
+			<td>
+			<input type="date" id="txtDate" name="txtDate"
+			min="01-05-2018" max="01-31-2018" />
+			</td>
+		</tr>
+		<tr>
+			<th>Upload Photo : </th>
+			<td>
+			<input type="file" id="fileImg" name="fileImg" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<input type="Submit"  disabled="disabled" id="submitbtn" name="Submit" value="Submit" />
+			</td>
+			<td>
+			<input type="reset" value="Cancel" />
+			</td>
+		</tr>
+	</table>
+    </form>
+    </div>
+</body>
+</html>

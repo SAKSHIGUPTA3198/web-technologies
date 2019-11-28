@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body
+        {
+            text-align: center
+        }
+        #container{
+        width:400px;
+        padding: 10px;
+        height:200px;
+        border: 50px solid rgb(119, 105, 151);
+        background-color:rgba(236, 216, 149, 0.925);
+        color: rgb(7, 12, 27);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    </style>
+</head>
+<body>
+        <div id="container">
+    <div class="outer-div">
+        <h1>
+            Product Details
+        </h1>
+        <div class="inner-div">
+            <table>
+                <tr>
+                <td>
+                        Category:
+                    </td>
+                <td>
+                                <select name="category" id="category" onchange="populateProducts()">
+                                        <option value ="-1">-----select product---</option>
+                                    <option value="electronics"> Electronics</option>
+                                    <option value="grocery">Grocery</option>
+                                </select>
+                            </td>
+
+
+                    </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Products:
+                        </td>
+                        <td>
+                          
+                                <select name="productName" id="productName" aria-placeholder="--------">
+                                        <option value ="-1">-----select product---</option>
+                                        <option value="1">Mobile</option>
+                                        </option>
+                                    
+                                </select>
+                            </td>
+                    </tr>
+                <tr>
+                        <td>
+                              Quantity:
+                            </td>
+                        
+                    
+                            <td>
+                                <input type="text" name="quantity" id="quantity" onblur="calculateTotal()" >
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                Total Price:
+                            </td>
+                            <td>
+                                    <input type="text" name="name" id="name">
+                            </td>
+                        </tr>
+                            <td>
+                                    <input type="button" value="SUBMIT">
+                            </td>
+                            <td>
+                                    <input type="button" value="CLEAR">
+                            </td>
+                    </tr>
+              
+            </table>
+        </div>
+    </div>
+</div>
+<script src="JsLab3.js"></script>
+</body>
+</html>

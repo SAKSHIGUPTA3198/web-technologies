@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #container{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+
+
+    }
+    </style>
+</head>
+<body onload="array()">
+        <h1>List of Employees</h1>
+        <p>***********************</p>
+    <div id="container"></div>
+
+
+    <p id="demo"></p>
+
+    <script>
+    var names, text, fLen, i;
+    names = ["Jay","Ajay","Vijay","sam"];
+    fLen = names.length;
+    
+    text = "<ol type=1>";
+    for (i = 0; i < fLen; i++) {
+      text += "<li>" + names[i] + "</li>";
+    }
+    text += "</ol>";
+    
+    document.getElementById("demo").innerHTML = text;
+    </script>
+
+<input type="button" value="SUBMIT" onclick="window.open('JsLab2.html','PopUpWindow','height=400,width=600,left=10,top10,,Scrollbars=yes,menubar=no');">
+
+</body>
+</html>

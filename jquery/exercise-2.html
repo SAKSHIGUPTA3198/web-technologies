@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Jquery Exercise-2</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("p").bind("click",function(){
+                $("<div>This is a click Event</div>").appendTo("body");
+                        });
+
+                        $("p").bind("dblclick",function(){
+                $("<div>This is a double click Event</div>").appendTo("body");
+                        });
+                        $("#apollo").bind("dblclick",function(){
+                $("<div>This is a shalene click Event</div>").appendTo("body");
+                        });
+                        $(".sakshi").bind("dblclick",function(){
+                $("<div>This is a sakshi click Event</div>").appendTo("body");
+                        });
+                        
+    } );
+
+    </script>
+</head>
+<body>
+    <p style="background-color: aquamarine;">Click me!</p>
+    <h1 id="apollo">shalene</h1>
+    <p class="sakshi">sakshi</p>
+</body>
+</html>

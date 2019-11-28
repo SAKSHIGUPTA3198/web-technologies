@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1 id="company"></h1>
+    <h2 id="location"></h2>
+    <h3 id="city"></h3>
+    <script>
+        var obj={"company":"LTI","location":"Mahape","city":"Mumbai"};
+     
+        var str=JSON.stringify(obj);
+        var obj2=JSON.parse(str);
+        localStorage.setItem("companyInfo",str);
+        var str2=localStorage.getItem("companyInfo");
+        var obj3=JSON.parse(str2);
+        document.getElementById("company").innerHTML=obj3.company;
+        document.getElementById("location").innerHTML=obj3.location;
+        document.getElementById("city").innerHTML=obj3.city;
+        //console.log(str2);
+        </script>
+</body>
+</html>

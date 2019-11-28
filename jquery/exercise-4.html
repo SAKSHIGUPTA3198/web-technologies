@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>JQuery Exercise-4</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#accept').click(function(){
+                if($('#submitbtn').is(':disabled')){
+                    $('#submitbtn').removeAttr('disabled');
+                }else{
+                    $('#submitbtn').attr('disabled','disabled');
+                }
+            });
+        });                                                                                                                                        
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="accept" name="accept" value="y"/>I accept <br>
+    <input type="submit" disabled="disabled" id="submitbtn" name="Submit"  value="Submit"/>
+
+</body>
+</html>

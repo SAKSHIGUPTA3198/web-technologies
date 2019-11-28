@@ -1,0 +1,13 @@
+{
+    "electronics":[
+        {"productName":"Television","productPrice":"20000"},
+        {"productName":"Laptop","productPrice":"30000"},
+        {"productName":"Phone","productPrice":"10000"}
+            
+        
+    ],
+    "grocery":[
+    {"productName":"Soap","productPrice":"40"},
+    {"productName":"Washing Powder","productPrice":"90"}
+    ]
+}
